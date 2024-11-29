@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-color: black;
+}
+  @media (max-width: 768px) {
+    header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+.container{
+    margin: 100px 0 0 200px;
+    width:50%;
+    height:450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container img{
+    width:50%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border:2px  solid aliceblue;
+    transition:all ease-in-out 0.5s;
+}
+.container img:hover{
+    width:80%;
+}
+h1{
+    color: plum;
+}
+        
+@media (max-width: 1024px) {
+            .container img {
+                width: 25%;
+            }
+        }
+        @media (max-width: 768px) {
+            .container img {
+                width: 40%;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container img {
+                width: 80%;
+            }
+        }
+
+</style>
+<body>
+    <h1><i><strong><u>CARD GAME~</u></strong></i></h1>
+    <div class="container">
+        <img src="panda.jpg">
+        <img src="piu.jpg">
+        <img src="cat.jpg">
+        <img src="catu.jpg">
+        <img src="duckie.jpg">
+    </div>
+</body>
+</html>
